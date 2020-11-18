@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copyright section</title>
+  </head>
+  <body>
+    <div class="footer-container">
+      <h2>Footer section</h2>
+      <div class="footer-bottom">
+        &copy; Copyright <span id="date"></span>. Code by Nadiia. All Rights
+        Reserved.
+      </div>
+    </div>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h2 {
+        font-weight: 700;
+        text-align: center;
+        color: rgb(75, 100, 104);
+      }
+
+      .footer-container {
+        height: 170px;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        background: linear-gradient(rgb(206, 190, 206), rgb(77, 66, 77));
+      }
+
+      .footer-bottom {
+        height: 40px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding-top: 10px;
+        position: absolute;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        color: black;
+        background: rgb(66, 57, 66);
+      }
+
+      #date {
+        text-decoration: none;
+      }
+    </style>
+
+    <script>
+      const date = document.querySelector("#date");
+      date.innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>
